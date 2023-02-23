@@ -9,7 +9,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('');
     const [scrolled, setScrolled] = useState(false)
 
     useEffect(()=>{
@@ -27,7 +27,7 @@ export const NavBar = () => {
     }, [])
 
     const onUpdateActiveLink = (value) => {
-        setActiveLink(value)
+        setActiveLink(value);
     }
 
 
